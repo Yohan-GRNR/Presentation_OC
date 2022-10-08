@@ -1,1 +1,66 @@
-<! style !>
+
+header
+{
+    background-image: url(../../Presentation_OC/assets/img/banner.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: -530px;
+    
+
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px;
+    
+}
+
+
+button
+{
+    background-color: rgba( 244, 187, 17 , 1);
+    border-radius: 8px;
+}
+button:hover
+{
+    background-color: rgba( 248, 247, 242 , 1);
+    border-radius: 8px;
+}
+
+/* Header coté gauche */
+.logo
+{
+    width: 80px;
+    height: 80px;
+}
+
+/* Header centre */
+.title
+{
+    border-radius: 10px;
+    border-color: black;
+    text-shadow: 0px 0px 7px white;
+    font-size: 2em;
+}
+
+/* Header coté droit */
+.actions
+{
+    padding-top: 1.5em;
+    padding-right: 2em;
+}
+.search
+{
+    display: inline-block; /* passer le bloc input + button à coté des autres actions */
+    vertical-align: middle;
+}
+input, .search
+{
+    height: 25px;
+    width: 100px;
+}
+button, .search
+{   
+    margin-top: 0.2em;
+    height: 25px;
+}
