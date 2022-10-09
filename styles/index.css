@@ -1,3 +1,10 @@
+body, html{height:100%;}
+
+body{
+
+text-align:center;
+
+}
 
 header
 {
@@ -27,15 +34,14 @@ button:hover
     border-radius: 8px;
 }
 
+
 /* Box Nav + Section = .center_page */
 .center_page
 {
-    display: block;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between; 
 }
-
-
 
 /* Header coté gauche */
 .logo
@@ -76,13 +82,58 @@ button, .search
 }
 
 /* Section (zone centrale) */
-section, img
+section 
 {
-    width: 200px;
-    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
-section, img:hover  
+section img,a
+{   
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 250px;
+    max-height: 200px;
+    height: auto;
+    text-align: center;
+    font-weight: bolt;
+    color: black;
+}
+
+section img:hover 
 {
-    width: 220px;
+    width: 270px;
     height: auto;
+    box-shadow: 10px 10px 10px black;
 }
+
+/* Footer */
+
+footer
+{
+	background-color: rgba(245,159,10, 0.2);
+	box-shadow: 0px 0px 10px orange;
+    padding-left: 20px;
+	padding-right: 20px;
+	margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+textarea
+{
+	background-color: orange;
+}
+
+
+.Copyright 
+{
+	text-align: right;
+    position:relative;
+    padding-right: 30px;
+    padding-top: 9%;
+}
+
+/* MODIFIER NAV */
