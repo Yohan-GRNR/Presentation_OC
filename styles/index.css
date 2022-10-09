@@ -27,6 +27,16 @@ button:hover
     border-radius: 8px;
 }
 
+/* Box Nav + Section = .center_page */
+.center_page
+{
+    display: block;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+
 /* Header coté gauche */
 .logo
 {
@@ -51,7 +61,7 @@ button:hover
 }
 .search
 {
-    display: inline-block; /* passer le bloc input + button à coté des autres actions */
+    display: inline-block; /* passe le bloc input + button à coté des autres actions */
     vertical-align: middle;
 }
 input, .search
@@ -63,4 +73,16 @@ button, .search
 {   
     margin-top: 0.2em;
     height: 25px;
+}
+
+/* Section (zone centrale) */
+section, img
+{
+    width: 200px;
+    height: auto;
+}
+section, img:hover  
+{
+    width: 220px;
+    height: auto;
 }
