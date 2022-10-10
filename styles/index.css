@@ -39,12 +39,11 @@ img{
 
 /* Header coté droit */
 .actions{
-    padding-top: 1.5em;
     margin-right: 15px;
 }
 
 .search{
-    display: inline-block; /* passe le bloc input + button à coté des autres actions */
+    display: inline-block;
     vertical-align: middle;
 }
 
@@ -86,7 +85,7 @@ section {
     justify-content: space-around;
 }
 
-section img,a{   
+section img, section a{   
     margin-top: 15px;
     margin-left: 20px;
     margin-right: 20px;
@@ -94,7 +93,6 @@ section img,a{
     max-height: 200px;
     height: auto;
     text-align: center;
-    font-weight: bolt;
     color: black;
 }
 
@@ -114,7 +112,11 @@ nav{
     background-position: 50%;
     border-bottom-left-radius: 30px;
 }
-
+nav a{
+    margin-top: 20px;
+    color: black;
+    padding-left: 20px;
+}
 nav h2{
     padding-right: 10px;
 }
@@ -149,6 +151,8 @@ footer{
 }
 
 textarea{
+    padding-left: 5px;
+    padding-top: 5px;
 	background-color: orange;
     color: rgba(0, 0, 0, 0.377);
     border-radius: 8px;
